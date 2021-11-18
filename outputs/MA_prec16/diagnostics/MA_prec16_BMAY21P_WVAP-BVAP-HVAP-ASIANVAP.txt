@@ -1,0 +1,19 @@
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [b, conc_params]
+ -- Processing BMAY21P
+After dropping NA and 0-VAP, len df 254 -> 254
+    -- Scaled 0 precincts, for an increase of 0 VAP
+Running ['WVAP', 'BVAP', 'HVAP', 'ASIANVAP', 'OVAP'] x ['Annissa George', 'Andrea Campbell', 'Kim Janey', 'Michelle Wu', 'None'] EI on BMAY21P
+r = 5 rows (demographic groups)
+c = 5 columns (candidates or voting outcomes)
+number of precincts = 254
+█Sampling 4 chains for 5_000 tune and 5_000 draw iterations (20_000 + 20_000 draws total) took 13932 seconds.
+The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+The rhat statistic is larger than 1.05 for some parameters. This indicates slight problems during sampling.
+The estimated number of effective samples is smaller than 200 for some parameters.
+
+Making viz for BMAY21P on ('WVAP', 'BVAP', 'HVAP', 'ASIANVAP')...
+Making summary for BMAY21P on ('WVAP', 'BVAP', 'HVAP', 'ASIANVAP')

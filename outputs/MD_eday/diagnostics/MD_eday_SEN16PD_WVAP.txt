@@ -1,0 +1,16 @@
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [b, conc_params]
+ -- Processing SEN16PD
+After dropping NA and 0-VAP, len df 1809 -> 1802
+    -- Scaled 0 precincts, for an increase of 0 VAP
+Running ['WVAP', 'OVAP'] x ['Chris Van Hollen', 'Donna Edwards', 'None'] EI on SEN16PD
+r = 2 rows (demographic groups)
+c = 3 columns (candidates or voting outcomes)
+number of precincts = 1802
+█Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 5596 seconds.
+The estimated number of effective samples is smaller than 200 for some parameters.
+
+Making viz for SEN16PD on ('WVAP',)...
+Making summary for SEN16PD on ('WVAP',)

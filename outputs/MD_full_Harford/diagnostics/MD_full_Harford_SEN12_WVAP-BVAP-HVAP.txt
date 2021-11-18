@@ -1,0 +1,22 @@
+INFO (theano.gof.compilelock): Waiting for existing lock by process '35435' (I am process '35297')
+INFO (theano.gof.compilelock): To manually release the lock, delete /tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/lock_dir
+INFO (theano.gof.compilelock): Waiting for existing lock by process '35115' (I am process '35297')
+INFO (theano.gof.compilelock): To manually release the lock, delete /tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/lock_dir
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [b, conc_params]
+ -- Processing SEN12
+After dropping NA and 0-VAP, len df 73 -> 73
+    -- Scaled 0 precincts, for an increase of 0 VAP
+Running ['WVAP', 'BVAP', 'HVAP', 'OVAP'] x ['Ben Cardin', 'Dan Bongino', 'None'] EI on SEN12
+r = 4 rows (demographic groups)
+c = 3 columns (candidates or voting outcomes)
+number of precincts = 73
+█Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 395 seconds.
+The rhat statistic is larger than 1.05 for some parameters. This indicates slight problems during sampling.
+The estimated number of effective samples is smaller than 200 for some parameters.
+WARNING (theano.gof.cmodule): A module that was loaded by this ModuleCache can no longer be read from file /tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/tmp31z9v56o/m439ad5c88554f29b26b7fcb5fff7c73d25c5683f8d710981ff2e1926cc3a27d1.so... this could lead to problems.
+
+Making viz for SEN12 on ('WVAP', 'BVAP', 'HVAP')...
+Making summary for SEN12 on ('WVAP', 'BVAP', 'HVAP')

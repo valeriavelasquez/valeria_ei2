@@ -1,0 +1,24 @@
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [b, conc_params]
+ -- Processing PRES16
+After dropping NA and 0-VAP, len df 110 -> 110
+    -- Scaled 7 precincts, for an increase of 1440 VAP
+Running ['WVAP', 'OVAP'] x ['Hillary Clinton', 'Donald Trump', 'None'] EI on PRES16
+r = 2 rows (demographic groups)
+c = 3 columns (candidates or voting outcomes)
+number of precincts = 110
+█Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 1514 seconds.
+There were 3 divergences after tuning. Increase `target_accept` or reparameterize.
+The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+There was 1 divergence after tuning. Increase `target_accept` or reparameterize.
+The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+There was 1 divergence after tuning. Increase `target_accept` or reparameterize.
+The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+There was 1 divergence after tuning. Increase `target_accept` or reparameterize.
+The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+The number of effective samples is smaller than 10% for some parameters.
+
+Making viz for PRES16 on ('WVAP',)...
+Making summary for PRES16 on ('WVAP',)

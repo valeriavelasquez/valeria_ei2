@@ -1,0 +1,17 @@
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [b, conc_params]
+ -- Processing GOV18PD
+After dropping NA and 0-VAP, len df 34 -> 34
+    -- Scaled 0 precincts, for an increase of 0 VAP
+Running ['WVAP', 'OVAP'] x ['Ben Jealous', 'Jim Shea', 'Krish Vignarajah', 'Rich Madaleno', 'Rushern Baker', 'None'] EI on GOV18PD
+r = 2 rows (demographic groups)
+c = 6 columns (candidates or voting outcomes)
+number of precincts = 34
+█Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 328 seconds.
+The estimated number of effective samples is smaller than 200 for some parameters.
+WARNING (theano.gof.cmodule): A module that was loaded by this ModuleCache can no longer be read from file /tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/tmp_4qxysia/m263f8cdbddb32298806a52d478a235f169dc1d3ef0e08941436f20349278c0b3.so... this could lead to problems.
+
+Making viz for GOV18PD on ('WVAP',)...
+Making summary for GOV18PD on ('WVAP',)

@@ -1,0 +1,22 @@
+WARNING (theano.gof.compilelock): Refreshing lock failed, we release the lock before raising again the exception
+WARNING (theano.gof.compilelock): Something wrong happened: <class 'FileNotFoundError'> [Errno 2] No such file or directory: '/tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/lock_dir/lock'
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [b, conc_params]
+ -- Processing SEN12PD
+After dropping NA and 0-VAP, len df 64 -> 63
+    -- Scaled 0 precincts, for an increase of 0 VAP
+Running ['WVAP', 'BVAP', 'HVAP', 'OVAP'] x ['Ben Cardin', 'Anthony Muse', 'None'] EI on SEN12PD
+r = 4 rows (demographic groups)
+c = 3 columns (candidates or voting outcomes)
+number of precincts = 63
+█Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 431 seconds.
+INFO (theano.gof.compilelock): Waiting for existing lock by process '30146' (I am process '26577')
+INFO (theano.gof.compilelock): To manually release the lock, delete /tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/lock_dir
+The rhat statistic is larger than 1.05 for some parameters. This indicates slight problems during sampling.
+The estimated number of effective samples is smaller than 200 for some parameters.
+WARNING (theano.gof.cmodule): A module that was loaded by this ModuleCache can no longer be read from file /tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/tmp_4qxysia/m263f8cdbddb32298806a52d478a235f169dc1d3ef0e08941436f20349278c0b3.so... this could lead to problems.
+
+Making viz for SEN12PD on ('WVAP', 'BVAP', 'HVAP')...
+Making summary for SEN12PD on ('WVAP', 'BVAP', 'HVAP')

@@ -1,0 +1,20 @@
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [b, conc_params]
+ -- Processing AG18
+After dropping NA and 0-VAP, len df 1809 -> 1802
+    -- Scaled 5 precincts, for an increase of 1652 VAP
+Running ['WVAP', 'OVAP'] x ['Brian Frosh', 'Craig Wolf', 'None'] EI on AG18
+r = 2 rows (demographic groups)
+c = 3 columns (candidates or voting outcomes)
+number of precincts = 1802
+█Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 10321 seconds.
+The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+The rhat statistic is larger than 1.05 for some parameters. This indicates slight problems during sampling.
+The estimated number of effective samples is smaller than 200 for some parameters.
+
+Making viz for AG18 on ('WVAP',)...
+Making summary for AG18 on ('WVAP',)

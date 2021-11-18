@@ -1,0 +1,17 @@
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [b, conc_params]
+ -- Processing SEN18
+After dropping NA and 0-VAP, len df 110 -> 110
+    -- Scaled 1 precincts, for an increase of 76 VAP
+Running ['WVAP', 'BVAP', 'HVAP', 'OVAP'] x ['Ben Cardin', 'Tony Campbell', 'None'] EI on SEN18
+r = 4 rows (demographic groups)
+c = 3 columns (candidates or voting outcomes)
+number of precincts = 110
+█Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 724 seconds.
+The rhat statistic is larger than 1.05 for some parameters. This indicates slight problems during sampling.
+The estimated number of effective samples is smaller than 200 for some parameters.
+
+Making viz for SEN18 on ('WVAP', 'BVAP', 'HVAP')...
+Making summary for SEN18 on ('WVAP', 'BVAP', 'HVAP')

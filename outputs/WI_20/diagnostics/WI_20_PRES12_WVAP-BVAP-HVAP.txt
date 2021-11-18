@@ -1,0 +1,33 @@
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+INFO (theano.gof.compilelock): Waiting for existing lock by process '28305' (I am process '27800')
+INFO (theano.gof.compilelock): To manually release the lock, delete /tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/lock_dir
+INFO (theano.gof.compilelock): Waiting for existing lock by process '28305' (I am process '27800')
+INFO (theano.gof.compilelock): To manually release the lock, delete /tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/lock_dir
+INFO (theano.gof.compilelock): Waiting for existing lock by process '28305' (I am process '27800')
+INFO (theano.gof.compilelock): To manually release the lock, delete /tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/lock_dir
+INFO (theano.gof.compilelock): Waiting for existing lock by process '28305' (I am process '27800')
+INFO (theano.gof.compilelock): To manually release the lock, delete /tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/lock_dir
+INFO (theano.gof.compilelock): Waiting for existing lock by process '28305' (I am process '27800')
+INFO (theano.gof.compilelock): To manually release the lock, delete /tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/lock_dir
+INFO (theano.gof.compilelock): Waiting for existing lock by process '28305' (I am process '27800')
+INFO (theano.gof.compilelock): To manually release the lock, delete /tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/lock_dir
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [b, conc_params]
+ -- Processing PRES12
+After dropping NA and 0-VAP, len df 7002 -> 6695
+    -- Scaled 75 precincts, for an increase of 6645 VAP
+Running ['WVAP', 'BVAP', 'HVAP', 'OVAP'] x ['Barack Obama', 'Mitt Romney', 'None'] EI on PRES12
+r = 4 rows (demographic groups)
+c = 3 columns (candidates or voting outcomes)
+number of precincts = 6695
+█Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 116729 seconds.
+There were 726 divergences after tuning. Increase `target_accept` or reparameterize.
+There were 692 divergences after tuning. Increase `target_accept` or reparameterize.
+There were 587 divergences after tuning. Increase `target_accept` or reparameterize.
+There were 677 divergences after tuning. Increase `target_accept` or reparameterize.
+The rhat statistic is larger than 1.4 for some parameters. The sampler did not converge.
+The estimated number of effective samples is smaller than 200 for some parameters.
+
+Making viz for PRES12 on ('WVAP', 'BVAP', 'HVAP')...
+Making summary for PRES12 on ('WVAP', 'BVAP', 'HVAP')

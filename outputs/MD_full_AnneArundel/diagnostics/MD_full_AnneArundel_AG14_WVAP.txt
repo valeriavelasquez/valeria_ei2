@@ -1,0 +1,103 @@
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+ -- Processing AG14
+After dropping NA and 0-VAP, len df 189 -> 189
+    -- Scaled 0 precincts, for an increase of 0 VAP
+Running ['WVAP', 'OVAP'] x ['Brian Frosh', 'Jeffrey Pritzker', 'None'] EI on AG14
+r = 2 rows (demographic groups)
+c = 3 columns (candidates or voting outcomes)
+number of precincts = 189
+Traceback (most recent call last):
+  File "ei.py", line 121, in <module>
+    main()
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "ei.py", line 116, in main
+    run_ei(state, elec, g, num_tunes, num_draws, county)
+  File "ei.py", line 94, in run_ei
+    ei.fit(group_fractions,
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/pyei/r_by_c.py", line 262, in fit
+    self.sim_trace = pm.sample(
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/pymc3/sampling.py", line 481, in sample
+    start_, step = init_nuts(
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/pymc3/sampling.py", line 2170, in init_nuts
+    step = pm.NUTS(potential=potential, model=model, **kwargs)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/pymc3/step_methods/hmc/nuts.py", line 168, in __init__
+    super().__init__(vars, **kwargs)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/pymc3/step_methods/hmc/base_hmc.py", line 93, in __init__
+    super().__init__(vars, blocked=blocked, model=model, dtype=dtype, **theano_kwargs)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/pymc3/step_methods/arraystep.py", line 243, in __init__
+    func = model.logp_dlogp_function(
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/pymc3/model.py", line 935, in logp_dlogp_function
+    return ValueGradFunction(self.logpt, grad_vars, extra_vars, **kwargs)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/pymc3/model.py", line 654, in __init__
+    self._theano_function = theano.function(
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/theano/compile/function.py", line 306, in function
+    fn = pfunc(params=inputs,
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/theano/compile/pfunc.py", line 483, in pfunc
+    return orig_function(inputs, cloned_outputs, mode,
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/theano/compile/function_module.py", line 1841, in orig_function
+    fn = m.create(defaults)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/theano/compile/function_module.py", line 1714, in create
+    _fn, _i, _o = self.linker.make_thunk(
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/theano/gof/link.py", line 697, in make_thunk
+    return self.make_all(input_storage=input_storage,
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/theano/gof/vm.py", line 1087, in make_all
+    thunks.append(node.op.make_thunk(node,
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/theano/gof/op.py", line 954, in make_thunk
+    return self.make_c_thunk(node, storage_map, compute_map,
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/theano/gof/op.py", line 857, in make_c_thunk
+    outputs = cl.make_thunk(input_storage=node_input_storage,
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/theano/gof/cc.py", line 1215, in make_thunk
+    cthunk, module, in_storage, out_storage, error_storage = self.__compile__(
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/theano/gof/cc.py", line 1153, in __compile__
+    thunk, module = self.cthunk_factory(error_storage,
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/theano/gof/cc.py", line 1623, in cthunk_factory
+    module = get_module_cache().module_from_key(
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/theano/gof/cmodule.py", line 1155, in module_from_key
+    module = self._get_from_hash(module_hash, key, keep_lock=keep_lock)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/theano/gof/cmodule.py", line 1055, in _get_from_hash
+    key_data.add_key(key, save_pkl=bool(key[0]))
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/theano/gof/cmodule.py", line 519, in add_key
+    self.save_pkl()
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/theano/gof/cmodule.py", line 540, in save_pkl
+    with open(self.key_pkl, 'wb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/tmpz10hodri/key.pkl'
+WARNING (theano.gof.cmodule): A module that was loaded by this ModuleCache can no longer be read from file /tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/tmpz10hodri/m885ff006a95d626dac547a7bdfdb471bbf058622ece2b4435e42316c4012ea56.so... this could lead to problems.
+
+Making viz for AG14 on ('WVAP',)...
+Traceback (most recent call last):
+  File "viz.py", line 151, in <module>
+    main()
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "viz.py", line 134, in main
+    ei = pickle.load(open(f"outputs/{state+county_id}/ei/{run_id}.pickle", "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'outputs/MD_full_AnneArundel/ei/MD_full_AnneArundel_AG14_WVAP.pickle'
+Making summary for AG14 on ('WVAP',)
+Traceback (most recent call last):
+  File "summary.py", line 51, in <module>
+    main()
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "summary.py", line 34, in main
+    ei = pickle.load(open(f"outputs/{state+county_id}/ei/{run_id}.pickle", "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'outputs/MD_full_AnneArundel/ei/MD_full_AnneArundel_AG14_WVAP.pickle'

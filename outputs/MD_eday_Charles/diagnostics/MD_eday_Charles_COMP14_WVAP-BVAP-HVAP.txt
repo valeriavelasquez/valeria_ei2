@@ -1,0 +1,16 @@
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [b, conc_params]
+ -- Processing COMP14
+After dropping NA and 0-VAP, len df 43 -> 43
+    -- Scaled 0 precincts, for an increase of 0 VAP
+Running ['WVAP', 'BVAP', 'HVAP', 'OVAP'] x ['Peter Franchot', 'William Campbell', 'None'] EI on COMP14
+r = 4 rows (demographic groups)
+c = 3 columns (candidates or voting outcomes)
+number of precincts = 43
+█Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 489 seconds.
+The estimated number of effective samples is smaller than 200 for some parameters.
+
+Making viz for COMP14 on ('WVAP', 'BVAP', 'HVAP')...
+Making summary for COMP14 on ('WVAP', 'BVAP', 'HVAP')

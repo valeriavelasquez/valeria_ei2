@@ -1,0 +1,16 @@
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [b, conc_params]
+ -- Processing PRES12
+After dropping NA and 0-VAP, len df 223 -> 223
+    -- Scaled 1 precincts, for an increase of 35 VAP
+Running ['WVAP', 'OVAP'] x ['Barack Obama', 'Mitt Romney', 'None'] EI on PRES12
+r = 2 rows (demographic groups)
+c = 3 columns (candidates or voting outcomes)
+number of precincts = 223
+█Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 992 seconds.
+The number of effective samples is smaller than 10% for some parameters.
+
+Making viz for PRES12 on ('WVAP',)...
+Making summary for PRES12 on ('WVAP',)

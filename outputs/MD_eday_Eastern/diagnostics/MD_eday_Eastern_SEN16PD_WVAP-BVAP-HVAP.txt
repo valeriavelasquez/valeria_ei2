@@ -1,0 +1,35 @@
+INFO (theano.gof.compilelock): Waiting for existing lock by process '8014' (I am process '8921')
+INFO (theano.gof.compilelock): To manually release the lock, delete /tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/lock_dir
+INFO (theano.gof.compilelock): Waiting for existing lock by process '8014' (I am process '8921')
+INFO (theano.gof.compilelock): To manually release the lock, delete /tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/lock_dir
+INFO (theano.gof.compilelock): Waiting for existing lock by process '8014' (I am process '8921')
+INFO (theano.gof.compilelock): To manually release the lock, delete /tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/lock_dir
+INFO (theano.gof.compilelock): Waiting for existing lock by process '8014' (I am process '8921')
+INFO (theano.gof.compilelock): To manually release the lock, delete /tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/lock_dir
+INFO (theano.gof.compilelock): Waiting for existing lock by process '8014' (I am process '8921')
+INFO (theano.gof.compilelock): To manually release the lock, delete /tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/lock_dir
+INFO (theano.gof.compilelock): Waiting for existing lock by process '8014' (I am process '8921')
+INFO (theano.gof.compilelock): To manually release the lock, delete /tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/lock_dir
+INFO (theano.gof.compilelock): Waiting for existing lock by process '8014' (I am process '8921')
+INFO (theano.gof.compilelock): To manually release the lock, delete /tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/lock_dir
+INFO (theano.gof.compilelock): Waiting for existing lock by process '8014' (I am process '8921')
+INFO (theano.gof.compilelock): To manually release the lock, delete /tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/lock_dir
+INFO (theano.gof.compilelock): Waiting for existing lock by process '8014' (I am process '8921')
+INFO (theano.gof.compilelock): To manually release the lock, delete /tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/lock_dir
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [b, conc_params]
+ -- Processing SEN16PD
+After dropping NA and 0-VAP, len df 166 -> 166
+    -- Scaled 0 precincts, for an increase of 0 VAP
+Running ['WVAP', 'BVAP', 'HVAP', 'OVAP'] x ['Chris Van Hollen', 'Donna Edwards', 'None'] EI on SEN16PD
+r = 4 rows (demographic groups)
+c = 3 columns (candidates or voting outcomes)
+number of precincts = 166
+█Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 809 seconds.
+The rhat statistic is larger than 1.2 for some parameters.
+The estimated number of effective samples is smaller than 200 for some parameters.
+
+Making viz for SEN16PD on ('WVAP', 'BVAP', 'HVAP')...
+Making summary for SEN16PD on ('WVAP', 'BVAP', 'HVAP')

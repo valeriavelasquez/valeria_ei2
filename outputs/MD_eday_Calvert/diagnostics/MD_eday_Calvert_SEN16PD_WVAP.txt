@@ -1,0 +1,18 @@
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [b, conc_params]
+ -- Processing SEN16PD
+After dropping NA and 0-VAP, len df 23 -> 23
+    -- Scaled 0 precincts, for an increase of 0 VAP
+Running ['WVAP', 'OVAP'] x ['Chris Van Hollen', 'Donna Edwards', 'None'] EI on SEN16PD
+r = 2 rows (demographic groups)
+c = 3 columns (candidates or voting outcomes)
+number of precincts = 23
+█Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 259 seconds.
+The number of effective samples is smaller than 10% for some parameters.
+INFO (theano.gof.compilelock): Waiting for existing lock by process '27991' (I am process '27891')
+INFO (theano.gof.compilelock): To manually release the lock, delete /tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/lock_dir
+
+Making viz for SEN16PD on ('WVAP',)...
+Making summary for SEN16PD on ('WVAP',)

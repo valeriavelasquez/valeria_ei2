@@ -1,0 +1,19 @@
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [b, conc_params]
+ -- Processing GOV14
+After dropping NA and 0-VAP, len df 230 -> 230
+    -- Scaled 0 precincts, for an increase of 0 VAP
+Running ['WVAP', 'OVAP'] x ['Anthony Brown', 'Larry Hogan', 'None'] EI on GOV14
+r = 2 rows (demographic groups)
+c = 3 columns (candidates or voting outcomes)
+number of precincts = 230
+█Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 2018 seconds.
+The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+The number of effective samples is smaller than 10% for some parameters.
+
+Making viz for GOV14 on ('WVAP',)...
+Making summary for GOV14 on ('WVAP',)

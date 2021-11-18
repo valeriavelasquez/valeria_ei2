@@ -1,0 +1,5 @@
+INFO (theano.gof.compilelock): Waiting for existing lock by process '30704' (I am process '30718')
+INFO (theano.gof.compilelock): To manually release the lock, delete /tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/lock_dir
+
+Making viz for PRES12 on ('BVAP', 'WVAP', 'HVAP')...
+Making summary for PRES12 on ('BVAP', 'WVAP', 'HVAP')

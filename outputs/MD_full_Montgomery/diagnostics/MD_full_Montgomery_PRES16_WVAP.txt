@@ -1,0 +1,22 @@
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+INFO (theano.gof.compilelock): Waiting for existing lock by process '17579' (I am process '17432')
+INFO (theano.gof.compilelock): To manually release the lock, delete /tmp/gschoe01/theano.NOBACKUP/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.10-x86_64-3.8.10-64/lock_dir
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [b, conc_params]
+ -- Processing PRES16
+After dropping NA and 0-VAP, len df 230 -> 230
+    -- Scaled 8 precincts, for an increase of 3919 VAP
+Running ['WVAP', 'OVAP'] x ['Hillary Clinton', 'Donald Trump', 'None'] EI on PRES16
+r = 2 rows (demographic groups)
+c = 3 columns (candidates or voting outcomes)
+number of precincts = 230
+█Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 2019 seconds.
+The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+The estimated number of effective samples is smaller than 200 for some parameters.
+
+Making viz for PRES16 on ('WVAP',)...
+Making summary for PRES16 on ('WVAP',)

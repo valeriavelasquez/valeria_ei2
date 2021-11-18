@@ -1,0 +1,58 @@
+ -- Processing TRE18
+Traceback (most recent call last):
+  File "ei.py", line 126, in <module>
+    main()
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "ei.py", line 123, in main
+    run_ei(state, elec, g, num_tunes, num_draws, county)
+  File "ei.py", line 98, in run_ei
+    group_fractions, votes_fractions, precinct_pops, groups, candidate_names, run_id = create_processed_df(state, elec, g, county)
+  File "ei.py", line 37, in create_processed_df
+    df = df[[COUNTY_COL, TOT_ELECTORATE, MATCH_KEY] + groups + candidate_cols]
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/geopandas/geodataframe.py", line 1299, in __getitem__
+    result = super(GeoDataFrame, self).__getitem__(key)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/pandas/core/frame.py", line 3461, in __getitem__
+    indexer = self.loc._get_listlike_indexer(key, axis=1)[1]
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/pandas/core/indexing.py", line 1314, in _get_listlike_indexer
+    self._validate_read_indexer(keyarr, indexer, axis)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/pandas/core/indexing.py", line 1377, in _validate_read_indexer
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['TRE18D', 'TRE18R'] not in index"
+
+Making viz for TRE18 on ('WVAP', 'BVAP', 'HVAP')...
+Traceback (most recent call last):
+  File "viz.py", line 151, in <module>
+    main()
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "viz.py", line 134, in main
+    ei = pickle.load(open(f"outputs/{state+county_id}/ei/{run_id}.pickle", "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'outputs/WI_10/ei/WI_10_TRE18_WVAP-BVAP-HVAP.pickle'
+Making summary for TRE18 on ('WVAP', 'BVAP', 'HVAP')
+Traceback (most recent call last):
+  File "summary.py", line 51, in <module>
+    main()
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "summary.py", line 34, in main
+    ei = pickle.load(open(f"outputs/{state+county_id}/ei/{run_id}.pickle", "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'outputs/WI_10/ei/WI_10_TRE18_WVAP-BVAP-HVAP.pickle'

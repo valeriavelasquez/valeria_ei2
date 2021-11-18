@@ -1,0 +1,16 @@
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [b, conc_params]
+ -- Processing AG14PD
+After dropping NA and 0-VAP, len df 73 -> 73
+    -- Scaled 0 precincts, for an increase of 0 VAP
+Running ['WVAP', 'OVAP'] x ['Brian Frosh', 'Aisha Braveboy', 'John Cardin', 'None'] EI on AG14PD
+r = 2 rows (demographic groups)
+c = 4 columns (candidates or voting outcomes)
+number of precincts = 73
+█Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 364 seconds.
+The estimated number of effective samples is smaller than 200 for some parameters.
+
+Making viz for AG14PD on ('WVAP',)...
+Making summary for AG14PD on ('WVAP',)

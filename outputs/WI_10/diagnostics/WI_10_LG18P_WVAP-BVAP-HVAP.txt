@@ -1,0 +1,90 @@
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [b, conc_params]
+ -- Processing LG18P
+After dropping NA and 0-VAP, len df 6939 -> 6630
+    -- Scaled 1 precincts, for an increase of 1 VAP
+Running ['WVAP', 'BVAP', 'HVAP', 'OVAP'] x ['Mandela Barnes', 'Kurt Kober', 'None'] EI on LG18P
+r = 4 rows (demographic groups)
+c = 3 columns (candidates or voting outcomes)
+number of precincts = 6630
+█Bad initial energy, check any log probabilities that are inf or -inf, nan or very small:
+Series([], )
+pymc3.parallel_sampling.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/pymc3/parallel_sampling.py", line 191, in _start_loop
+    point, stats = self._compute_point()
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/pymc3/parallel_sampling.py", line 218, in _compute_point
+    point, stats = self._step_method.step(self._point)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/pymc3/step_methods/arraystep.py", line 263, in step
+    apoint, stats = self.astep(array)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/pymc3/step_methods/hmc/base_hmc.py", line 167, in astep
+    raise SamplingError("Bad initial energy")
+pymc3.exceptions.SamplingError: Bad initial energy
+"""
+
+The above exception was the direct cause of the following exception:
+
+pymc3.exceptions.SamplingError: Bad initial energy
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "ei.py", line 126, in <module>
+    main()
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "ei.py", line 123, in main
+    run_ei(state, elec, g, num_tunes, num_draws, county)
+  File "ei.py", line 101, in run_ei
+    ei.fit(group_fractions,
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/pyei/r_by_c.py", line 262, in fit
+    self.sim_trace = pm.sample(
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/pymc3/sampling.py", line 545, in sample
+    trace = _mp_sample(**sample_args, **parallel_args)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/pymc3/sampling.py", line 1486, in _mp_sample
+    for draw in sampler:
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/pymc3/parallel_sampling.py", line 492, in __iter__
+    draw = ProcessAdapter.recv_draw(self._active)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/pymc3/parallel_sampling.py", line 365, in recv_draw
+    raise error from old_error
+pymc3.parallel_sampling.ParallelSamplingError: Bad initial energy
+
+Making viz for LG18P on ('WVAP', 'BVAP', 'HVAP')...
+Traceback (most recent call last):
+  File "viz.py", line 151, in <module>
+    main()
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "viz.py", line 134, in main
+    ei = pickle.load(open(f"outputs/{state+county_id}/ei/{run_id}.pickle", "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'outputs/WI_10/ei/WI_10_LG18P_WVAP-BVAP-HVAP.pickle'
+Making summary for LG18P on ('WVAP', 'BVAP', 'HVAP')
+Traceback (most recent call last):
+  File "summary.py", line 51, in <module>
+    main()
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/cluster/home/gschoe01/miniconda3/envs/fake-ensemble-analysis/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "summary.py", line 34, in main
+    ei = pickle.load(open(f"outputs/{state+county_id}/ei/{run_id}.pickle", "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'outputs/WI_10/ei/WI_10_LG18P_WVAP-BVAP-HVAP.pickle'
